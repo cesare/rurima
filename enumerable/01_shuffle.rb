@@ -3,4 +3,8 @@
 # 用途　：チームで昼飯を食いに行く会の組み合わせを決める
 # 　　　　→あまり人数が多いと店に入れないので、
 # 　　　　　10人前後の参加者をランダムに２組に分けたい
-
+def split_members(list)
+  right = list.sample(list.length / 2)
+  left = list - right
+  [left, right]
+end
