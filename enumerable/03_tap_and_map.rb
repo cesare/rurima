@@ -6,3 +6,5 @@
     hash[k.to_s.camelize(:lower)] = v
   end
 end
+
+Hash[*@options.map{|k,v| [k.to_s.camelize(:lower), v] }.flatten ]
